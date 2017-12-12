@@ -1,0 +1,19 @@
+<UserControl
+    x:Class="WinXClubHD.Layouts.Controls.AdvertisingControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"	
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"	
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    mc:Ignorable="d"
+       >
+    <Grid>
+            <UI:AdControl ApplicationId="74a47a3b-d1c2-4fa7-9cd6-f44f4bd1ff5b"
+                    AdUnitId="ctrl-9nblggh5xvdm-1"
+                    Width="{x:Bind BannerWidth}" 
+                    Height="{x:Bind BannerHeight}" 
+                    HorizontalAlignment="Center"/>
+    </Grid>
+</UserControl>
